@@ -41,21 +41,21 @@ Partial Class Form1
         '
         'TBArtworkTitle
         '
-        Me.TBArtworkTitle.Location = New System.Drawing.Point(3, 152)
+        Me.TBArtworkTitle.Location = New System.Drawing.Point(3, 153)
         Me.TBArtworkTitle.Name = "TBArtworkTitle"
         Me.TBArtworkTitle.Size = New System.Drawing.Size(78, 20)
         Me.TBArtworkTitle.TabIndex = 0
         '
         'ArtistName
         '
-        Me.ArtistName.Location = New System.Drawing.Point(87, 152)
+        Me.ArtistName.Location = New System.Drawing.Point(87, 153)
         Me.ArtistName.Name = "ArtistName"
         Me.ArtistName.Size = New System.Drawing.Size(78, 20)
         Me.ArtistName.TabIndex = 1
         '
         'ArtworkPrice
         '
-        Me.ArtworkPrice.Location = New System.Drawing.Point(171, 152)
+        Me.ArtworkPrice.Location = New System.Drawing.Point(171, 153)
         Me.ArtworkPrice.Name = "ArtworkPrice"
         Me.ArtworkPrice.Size = New System.Drawing.Size(78, 20)
         Me.ArtworkPrice.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class Form1
         Me.CategoryComboBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CategoryComboBox.FormattingEnabled = True
         Me.CategoryComboBox.Items.AddRange(New Object() {"Painting", "Sculpture", "Digital Art", "Photography", "Crafts", " "})
-        Me.CategoryComboBox.Location = New System.Drawing.Point(255, 152)
+        Me.CategoryComboBox.Location = New System.Drawing.Point(255, 153)
         Me.CategoryComboBox.Name = "CategoryComboBox"
         Me.CategoryComboBox.Size = New System.Drawing.Size(120, 21)
         Me.CategoryComboBox.TabIndex = 3
@@ -73,9 +73,9 @@ Partial Class Form1
         'AddArtwork
         '
         Me.AddArtwork.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AddArtwork.Location = New System.Drawing.Point(3, 301)
+        Me.AddArtwork.Location = New System.Drawing.Point(3, 303)
         Me.AddArtwork.Name = "AddArtwork"
-        Me.AddArtwork.Size = New System.Drawing.Size(78, 146)
+        Me.AddArtwork.Size = New System.Drawing.Size(78, 144)
         Me.AddArtwork.TabIndex = 4
         Me.AddArtwork.Text = "Add Artwork"
         Me.AddArtwork.UseVisualStyleBackColor = True
@@ -83,9 +83,9 @@ Partial Class Form1
         'AnalyzeExhibit
         '
         Me.AnalyzeExhibit.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AnalyzeExhibit.Location = New System.Drawing.Point(381, 301)
+        Me.AnalyzeExhibit.Location = New System.Drawing.Point(381, 303)
         Me.AnalyzeExhibit.Name = "AnalyzeExhibit"
-        Me.AnalyzeExhibit.Size = New System.Drawing.Size(279, 146)
+        Me.AnalyzeExhibit.Size = New System.Drawing.Size(279, 144)
         Me.AnalyzeExhibit.TabIndex = 5
         Me.AnalyzeExhibit.Text = "Analyze Exhibit"
         Me.AnalyzeExhibit.UseVisualStyleBackColor = True
@@ -125,9 +125,9 @@ Partial Class Form1
         'ResetData
         '
         Me.ResetData.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ResetData.Location = New System.Drawing.Point(87, 301)
+        Me.ResetData.Location = New System.Drawing.Point(87, 303)
         Me.ResetData.Name = "ResetData"
-        Me.ResetData.Size = New System.Drawing.Size(78, 146)
+        Me.ResetData.Size = New System.Drawing.Size(78, 144)
         Me.ResetData.TabIndex = 11
         Me.ResetData.Text = "Reset Data"
         Me.ResetData.UseVisualStyleBackColor = True
@@ -136,7 +136,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label3.Location = New System.Drawing.Point(171, 136)
+        Me.Label3.Location = New System.Drawing.Point(171, 137)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 13)
         Me.Label3.TabIndex = 8
@@ -147,7 +147,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.Location = New System.Drawing.Point(87, 136)
+        Me.Label2.Location = New System.Drawing.Point(87, 137)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 13)
         Me.Label2.TabIndex = 7
@@ -158,7 +158,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label1.Location = New System.Drawing.Point(3, 136)
+        Me.Label1.Location = New System.Drawing.Point(3, 137)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 6
@@ -169,7 +169,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label4.Location = New System.Drawing.Point(255, 136)
+        Me.Label4.Location = New System.Drawing.Point(255, 137)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(120, 13)
         Me.Label4.TabIndex = 9
@@ -183,7 +183,7 @@ Partial Class Form1
         Me.Exhibit.Location = New System.Drawing.Point(381, 3)
         Me.Exhibit.Name = "Exhibit"
         Me.TableLayoutPanel1.SetRowSpan(Me.Exhibit, 2)
-        Me.Exhibit.Size = New System.Drawing.Size(279, 292)
+        Me.Exhibit.Size = New System.Drawing.Size(279, 294)
         Me.Exhibit.TabIndex = 12
         '
         'Outputs

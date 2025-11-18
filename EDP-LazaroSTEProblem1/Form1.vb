@@ -40,19 +40,34 @@
         Dim totalPrice As Double = 0
         Dim highestPrice As Double = Double.MinValue
         Dim lowestPrice As Double = Double.MaxValue
+        Dim highestArtwork As String = ""
+        Dim lowestArtwork As String = ""
         Dim categoryCounts As New Dictionary(Of String, Integer)
 
         For Each art As String In ArtworkList
             Exhibit.Items.Add(art)
 
             Dim parts() As String = art.Split("|"c)
+            Dim title As String = parts(0).Trim()
+            Dim artist As String = parts(1).Trim()
             Dim category As String = parts(2).Trim()
             Dim price As Double = Double.Parse(parts(3).Trim())
 
             totalPrice += price
-            If price > highestPrice Then highestPrice = price
-            If price < lowestPrice Then lowestPrice = price
 
+            ' Check for highest price
+            If price > highestPrice Then
+                highestPrice = price
+                highestArtwork = title & " by " & artist
+            End If
+
+            ' Check for lowest price
+            If price < lowestPrice Then
+                lowestPrice = price
+                lowestArtwork = title & " by " & artist
+            End If
+
+            ' Count categories
             If categoryCounts.ContainsKey(category) Then
                 categoryCounts(category) += 1
             Else
@@ -62,8 +77,8 @@
 
         Dim outputText As String = "Total Artworks: " & totalArtworks & Environment.NewLine
         outputText &= "Average Price: " & (totalPrice / totalArtworks).ToString("F2") & Environment.NewLine
-        outputText &= "Highest Price: " & highestPrice.ToString("F2") & Environment.NewLine
-        outputText &= "Lowest Price: " & lowestPrice.ToString("F2") & Environment.NewLine
+        outputText &= "Highest Priced Artwork: " & highestArtwork & " (" & highestPrice.ToString("F2") & ")" & Environment.NewLine
+        outputText &= "Lowest Priced Artwork: " & lowestArtwork & " (" & lowestPrice.ToString("F2") & ")" & Environment.NewLine
         outputText &= "Artworks per Category:" & Environment.NewLine
 
         For Each kvp In categoryCounts
